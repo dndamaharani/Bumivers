@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",         // hasil compile masuk ke dist/
+    "rootDir": "./src",         // folder sumber TypeScript kamu
+    "module": "ESNext",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["src"]
+}

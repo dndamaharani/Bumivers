@@ -1,0 +1,13 @@
+[
+    {
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "email": "mutiazahra@gmail.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ]
+  

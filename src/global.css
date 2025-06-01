@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Variables ===== */
+:root {
+  --font-family: "Inter", system-ui, sans-serif;
+
+  --text-color: #2e2e2e;
+  --background-color: #f0fdf4;
+
+  --primary-color: #4caf50;
+  --primary-hover: #388e3c;
+
+  --link-color: #2e7d32;
+  --link-hover-color: #1b5e20;
+
+  --button-text: #ffffff;
+  --button-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Dark Mode Overrides ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #e0f2f1;
+    --background-color: #1b5e20;
+
+    --primary-color: #66bb6a;
+    --primary-hover: #388e3c;
+
+    --link-hover-color: #a5d6a7;
+  }
+}
+
+/* ===== Base Styles ===== */
+html {
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-color);
+}
+
+/* ===== Links ===== */
+a {
+  font-weight: 600;
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ===== Buttons ===== */
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.8em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px var(--button-shadow);
+}
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(2px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ===== Typography & Elements ===== */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-style: italic;
+}
+
+code {
+  background-color: #e0f2f1;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #00796b;
+}
+
+pre {
+  background-color: #f1f8e9;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #a5d6a7;
+  margin: 2rem 0;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #c8e6c9;
+  text-align: left;
+}
+th {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f1f8e9;
+}
+
+/* ===== Responsive Font Sizes ===== */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
