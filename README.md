@@ -397,5 +397,3 @@ Jika ada masalah atau pertanyaan:
 - Tambah artikel dan topik edukasi
 - Setup monitoring untuk production
 - Tambah fitur sesuai feedback user
-
-**Happy coding! 🌍💚**
